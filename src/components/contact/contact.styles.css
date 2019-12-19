@@ -1,0 +1,161 @@
+#contact {
+    padding: 50px 0;
+    position: relative;
+}
+
+#contact::before {
+    position: absolute;
+    content: "";
+    height: 150px;
+    width: 100%;
+    background: #999999;
+    left: 0px;
+    right: 0px;
+    top: 0px;
+}
+
+.contact-inner {
+    position: relative;
+    /* top: -125px; */
+    border: 1px solid #0000007d;
+    border-radius: 10px;
+    padding: 50px 0px;
+    background: #eee;
+}
+
+.form {
+    width: 100%;
+    background: #eee;
+    padding: 20px;
+}
+
+.form-group {
+    display: flex;
+    flex-direction: column;
+    position: relative;
+    margin-bottom: 30px;
+}
+
+.label {
+    position: absolute;
+    top: 8px;
+    left: 12px;
+    transition: 300ms ease;
+}
+
+.input-field {
+    height: 44px;
+    border: 1px solid rgba(0,0,0,0.4);
+    padding: 0px 12px;
+    border-radius: 4px;
+    font-size: 15px;
+}
+
+.textarea {
+    border: 1px solid rgba(0,0,0,0.4);
+    padding: 0px 12px;
+    border-radius: 4px;
+    font-size: 15px;
+    width: 100%;
+    max-width: 100%;
+    min-width: 100%;
+    margin-top: 0px;
+    margin-bottom: 0px;
+    height: 110px;
+    padding-top: 10px;
+    min-height: 110px;
+}
+
+.label.shrink-to-top {
+    top: -9px;
+    font-size: 13px;
+    background: #eee;
+}
+
+.focus:focus + .label {
+    top: -9px;
+    font-size: 13px;
+    background: #eee;
+    color: #0538a4d1;
+}
+
+.focus:focus:not(:valid) + label {
+    color: red
+}
+.focus:not(:valid) + label {
+    color: red;
+}
+.focus:not(:valid) {
+    outline-color: red;
+}
+
+
+.btn {
+    border: none;
+    padding: 11px 55px;
+    background: #911a1b;
+    border-radius: 3px;
+    color: #eee;
+    cursor: pointer;
+    outline: none;
+    transition: color 300ms ease;
+}
+
+.btn:hover {
+    background: #911a1b;
+    color: #eeec
+}
+
+.direction-row {
+    flex-direction: row;
+    justify-content: flex-end;
+}
+
+.contact-content {
+    width: 100%;
+    max-width: 500px;
+    min-width: 320px;
+    margin: 0 auto;
+}
+
+.links-container {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+}
+
+.links {
+    font-size: 62px;
+    cursor: pointer;
+    transition: color 300ms ease;
+}
+
+.facebook {
+    color: #3c5a99;
+}
+
+.facebook:hover {
+    color: #234a9e
+}
+
+.twitter {
+    color: #5DA9DD;
+}
+
+.twitter:hover {
+    color: rgb(40, 146, 218);
+}
+
+.gmail {
+    color: #D34436;
+}
+
+.gmail:hover {
+    color: rgb(214, 54, 40);
+}
+
+.or-separator {
+    font-size: 18.5px;
+    margin-bottom: 23px;
+    font-weight: 500;
+}
