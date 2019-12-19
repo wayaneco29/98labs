@@ -1,11 +1,15 @@
 #offer {
     padding: 70px 0px 0px 0px;
-    background: rgba(0,0,0,0.4);
+    background: #999999;
 }
 
 .offer-inner {
     display: flex;
     flex-direction: column;
+}
+
+.offer-title::before {
+    border-bottom: 10px solid #999999;
 }
 
 .offer-content {

@@ -8,6 +8,8 @@ import { MdSubdirectoryArrowRight } from 'react-icons/md';
 import ContentTitle from '../ContentTitle';
 import ContentText from '../ContentText';
 
+import Animate from '../Animate';
+
 import './offer.styles.css';
 
 const Offer = () => {
@@ -17,7 +19,9 @@ const Offer = () => {
             <Container>
                 <div className="offer-inner">
                     <div className="title-container">
-                        <div className="title">what we offer</div>
+                        <Animate name="fadeInUp">
+                            <div className="title offer-title">what we offer</div>
+                        </Animate>
                     </div>
                     <div className="offer-content">
                         <div className="offer-content-inner border-left">

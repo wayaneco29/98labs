@@ -1,13 +1,13 @@
 import React from 'react';
 
 const style = {
-    fontSize: '1rem',
+    fontSize: '15px',
     color: '#911A1B',
-    fontWeight: 500,
+    fontWeight: 600,
     marginTop: '20px',
     marginBottom: '25px',
+    letterSpacing: '1px'
 }
-
 interface IProps {
     title: string
 }

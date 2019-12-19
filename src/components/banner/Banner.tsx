@@ -1,11 +1,19 @@
-import React from 'react';
+import React, { useContext } from 'react';
+
+import { BoundingRectTop } from '../../App';
 
 import Container from '../container/Container.component';
 
 import './banner.styles.css';
 
 const Banner = () => {
-
+    const { distance, setDistance } = useContext(BoundingRectTop);
+    
+    window.addEventListener("scroll", () => {
+        const banner = document.querySelector("#banner").getBoundingClientRect().top;
+        setDistance(banner)
+    })
+    
     return (
         <div id="banner">
             <div className="banner-background"></div>

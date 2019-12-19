@@ -1,3 +1,8 @@
+@font-face {
+  font-family: "Roboto";
+  src: url("./fonts/Roboto-Regular.ttf");
+}
+
 .App {
   text-align: center;
 }
@@ -24,4 +29,16 @@
 
 .nav-item.active{
   opacity: 1 !important;
+  position: relative;
+}
+
+.nav-item.active::before {
+  position: absolute;
+  content: "";
+  left: 0px;
+  right: 0px;
+  bottom: 20px;
+  height: 2px;
+  width: 100%;
+  background: #911a1b;
 }

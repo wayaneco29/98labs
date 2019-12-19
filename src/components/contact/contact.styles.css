@@ -1,5 +1,5 @@
 #contact {
-    padding: 50px 0;
+    padding: 70px 0;
     position: relative;
 }
 
@@ -16,8 +16,7 @@
 
 .contact-inner {
     position: relative;
-    /* top: -125px; */
-    border: 1px solid #0000007d;
+    box-shadow: 0px 8px 6px 0px rgba(0,0,0,0.5);
     border-radius: 10px;
     padding: 50px 0px;
     background: #eee;
@@ -38,7 +37,7 @@
 
 .label {
     position: absolute;
-    top: 8px;
+    top: 11px;
     left: 12px;
     transition: 300ms ease;
 }
@@ -67,26 +66,16 @@
 }
 
 .label.shrink-to-top {
-    top: -9px;
+    top: -7px;
     font-size: 13px;
     background: #eee;
 }
 
 .focus:focus + .label {
-    top: -9px;
+    top: -7px;
     font-size: 13px;
     background: #eee;
     color: #0538a4d1;
-}
-
-.focus:focus:not(:valid) + label {
-    color: red
-}
-.focus:not(:valid) + label {
-    color: red;
-}
-.focus:not(:valid) {
-    outline-color: red;
 }
 
 
@@ -135,7 +124,8 @@
 }
 
 .facebook:hover {
-    color: #234a9e
+    color: #234a9e;
+    text-decoration: underline;
 }
 
 .twitter {

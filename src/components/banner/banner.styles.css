@@ -21,7 +21,7 @@
 }
 
 .banner-title {
-    font-size: 3rem;
+    font-size: 3.4rem;
     color: #eee;
     margin-bottom: 20px;
     font-weight: bold;
@@ -35,7 +35,7 @@
 
 .banner-button {
     border: none;
-    padding: 14px 23px;
+    padding: 15px 24px;
     border-radius: 2px;
     background: #911a1b;
     color: #eee;
