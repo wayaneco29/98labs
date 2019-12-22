@@ -39,3 +39,21 @@
     top: -50px;
     border: 1px solid #eee;
 }
+
+@media only screen and (max-width: 768px) {
+    .offer-content {
+        flex-direction: column;
+    }
+}
+
+@media only screen and (max-width: 600px) {
+    .offer-content-inner {
+        margin: 40px 38px;
+        padding: 42px 17px;
+    }
+    
+    .offer-title {
+        margin-top: 0px !important;
+        margin-bottom: 10px !important;
+    }
+}

@@ -1,6 +1,7 @@
 import React from 'react';
 
 import Container from '../container/Container.component';
+import Animate from '../Animate';
 
 import { FaFacebook } from 'react-icons/fa';
 import { AiFillTwitterCircle, AiFillGoogleCircle } from 'react-icons/ai';
@@ -33,12 +34,12 @@ const Contact = () => {
             <Container>
                 <div className="contact-inner">
                     <div className="title-container">
-                        <div className="title">
+                        <Animate name="fadeInUp" className="title">
                             contact us
-                        </div>
+                        </Animate>
                     </div>
                     <div className="contact-content">
-                        <form className="form">
+                        <Animate name="fadeIn" className="form">
                             <div className="form-group">
                                 <input type="email" id="email" name="email" className="input-field focus" onChange={handleChange}/>
                                 <label htmlFor="email" className={`label ${datas.email ? "shrink-to-top" : ""}`}>Email</label>
@@ -54,13 +55,13 @@ const Contact = () => {
                             <div className="form-group direction-row">
                                 <button type="button" className="btn">Send.</button>
                             </div>
-                        </form>
-                        <div className="or-separator"><span className="dashed">-</span> OR <span className="dashed">-</span></div>
-                        <div className="links-container">
+                        </Animate>
+                        <Animate name="fadeIn" className="or-separator"><span className="dashed">-</span> OR <span className="dashed">-</span></Animate>
+                        <Animate name="fadeIn" className="links-container">
                             <a href="https://web.facebook.com/98Labs/?_rdc=1&_rdr" rel="noopener noreferrer" target="_blank" className="links facebook"><FaFacebook /></a>
                             <a href="https://twitter.com/98labs?lang=en" rel="noopener noreferrer" target="_blank" className="links twitter"><AiFillTwitterCircle /></a>
                             <a href="mailto:info@98labs.com" rel="noopener noreferrer" target="_self" className="links gmail"><AiFillGoogleCircle /></a>
-                        </div>
+                        </Animate>
                     </div>
                 </div>
             </Container>

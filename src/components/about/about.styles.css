@@ -154,3 +154,35 @@
     bottom: 35%;
     z-index: -1;
 }
+
+@media only screen and (max-width: 768px) {
+    .about-content {
+        flex-direction: column;
+    }
+
+    .margin-40 {
+        margin-bottom: 40px;
+        padding: 0px 50px;
+    }
+}
+@media only screen and (max-width: 600px) {
+    .margin-40 {
+        padding: 0px 20px;
+    }
+
+    .title {
+        font-size: 1.6rem;
+    }
+
+    .title::after {
+        height:27px;
+        width: 16px;
+        left: -22px;
+    }
+
+    .logo {
+        width:80px;
+        height: 80px;
+        margin-bottom: 5px;
+    }
+}

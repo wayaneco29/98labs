@@ -5,7 +5,7 @@ interface IProps {
 }
 
 const ContentText:React.FC<IProps> = ({ children }) => (
-    <div>{ children }</div>
+    <div className="content-text">{ children }</div>
 )
 
 export default ContentText;

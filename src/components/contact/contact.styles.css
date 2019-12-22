@@ -149,3 +149,18 @@
     margin-bottom: 23px;
     font-weight: 500;
 }
+
+@media only screen and (max-width: 600px) {
+    .input-field {
+         height: 39px;
+    }
+    .label {
+        font-size: 14px;
+    }
+    .btn {
+        padding: 9px 49px;
+    }
+    .links {
+        font-size: 55px;
+    }
+}

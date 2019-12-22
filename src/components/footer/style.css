@@ -91,3 +91,15 @@
     text-align: center;
     border-top: 1px solid #c7c6c6cc;
 }
+
+@media only screen and (max-width: 768px) {
+    .footer-link-container {
+        flex-direction: column;
+    }
+
+    .footer-link {
+        margin-bottom: 20px;
+        text-align: center;
+        flex-basis: 100%;
+    }
+}

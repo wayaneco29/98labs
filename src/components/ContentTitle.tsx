@@ -9,11 +9,12 @@ const style = {
     letterSpacing: '1px'
 }
 interface IProps {
-    title: string
+    title: string,
+    className?: string
 }
 
-const ContentTitle:React.FC<IProps> = ({ title }) => (
-    <div style={style}>{ title }</div>
+const ContentTitle:React.FC<IProps> = ({ title, className }) => (
+    <div className={className} style={style}>{ title }</div>
 )
 
 export default ContentTitle;

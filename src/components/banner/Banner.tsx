@@ -7,7 +7,7 @@ import Container from '../container/Container.component';
 import './banner.styles.css';
 
 const Banner = () => {
-    const { distance, setDistance } = useContext(BoundingRectTop);
+    const { setDistance } = useContext(BoundingRectTop);
     
     window.addEventListener("scroll", () => {
         const banner = document.querySelector("#banner").getBoundingClientRect().top;

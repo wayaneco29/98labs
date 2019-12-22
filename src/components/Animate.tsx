@@ -6,11 +6,12 @@ import "animate.css/animate.min.css";
 
 interface IProps {
     name: string,
+    className?: any,
     children: React.ReactNode
 }
 
-const Animate:React.FC<IProps> = ({ name, children }) => (
-    <ScrollAnimation animateIn={name} duration={2.3} animateOnce={true}>
+const Animate:React.FC<IProps> = ({ name, children, className }) => (
+    <ScrollAnimation animateIn={name} duration={2} animateOnce={true} className={className}>
         { children }
     </ScrollAnimation>
 )
