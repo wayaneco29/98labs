@@ -11,7 +11,7 @@ interface IProps {
 }
 
 const Animate:React.FC<IProps> = ({ name, children, className }) => (
-    <ScrollAnimation animateIn={name} duration={2} animateOnce={true} className={className}>
+    <ScrollAnimation animateIn={name} duration={1} animateOnce={true} className={className}>
         { children }
     </ScrollAnimation>
 )

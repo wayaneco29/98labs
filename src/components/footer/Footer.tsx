@@ -19,12 +19,12 @@ const Footer:React.FC = () => {
                             <a href="https://wayaneco29.github.io/98labs" target="_self" rel="referrer noopener" className="link">BUILD</a>
                         </div>
                         <div className="footer-link info-link">
-                            <p className="info">
+                            <div className="info">
                                 <MdLocationOn  className="info-logo first"/>
                                 <p className="info-text">
                                     Cityland Herrera Tower V.A. Rufino corner Valero Streets, Salcedo Village, Makati, 1227 Metro Manila
                                 </p>
-                            </p>
+                            </div>
                             <div className="info">
                                 <MdPhone  className="info-logo second"/>
                                 <p className="info-text">

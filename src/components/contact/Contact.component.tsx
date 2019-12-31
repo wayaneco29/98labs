@@ -28,7 +28,19 @@ const Contact = () => {
             ...datas,
             [name]: value
         })
+    } 
+
+    const handleSubmit = (e:React.FormEvent<HTMLFormElement>) => {
+        e.preventDefault();
+
+        setDatas({
+            ...datas,
+            name: "",
+            email: "",
+            message: ""
+        })
     }
+
     return (
         <div id="contact">
             <Container>
@@ -39,22 +51,24 @@ const Contact = () => {
                         </Animate>
                     </div>
                     <div className="contact-content">
-                        <Animate name="fadeIn" className="form">
-                            <div className="form-group">
-                                <input type="email" id="email" name="email" className="input-field focus" onChange={handleChange}/>
-                                <label htmlFor="email" className={`label ${datas.email ? "shrink-to-top" : ""}`}>Email</label>
-                            </div>
-                            <div className="form-group">
-                                <input type="text" id="name" name="name" className="input-field focus" onChange={handleChange}/>
-                                <label htmlFor="" className={`label ${datas.name ? "shrink-to-top" : ""}`}>Name</label>
-                            </div>
-                            <div className="form-group">
-                                <textarea className="textarea focus" name="message" onChange={handleChange}/>
-                                <label htmlFor="" className={`label ${datas.message ? "shrink-to-top" : ""}`}>Message</label>
-                            </div>
-                            <div className="form-group direction-row">
-                                <button type="button" className="btn">Send.</button>
-                            </div>
+                        <Animate name="fadeIn">
+                            <form name="fadeIn" className="form" onSubmit={handleSubmit}>
+                                <div className="form-group">
+                                    <input type="email" id="email" name="email" className="input-field focus" onChange={handleChange} value={datas.email}/>
+                                    <label htmlFor="email" className={`label ${datas.email ? "shrink-to-top" : ""}`}>Email</label>
+                                </div>
+                                <div className="form-group">
+                                    <input type="text" id="name" name="name" className="input-field focus" onChange={handleChange} value={datas.name}/>
+                                    <label htmlFor="" className={`label ${datas.name ? "shrink-to-top" : ""}`}>Name</label>
+                                </div>
+                                <div className="form-group">
+                                    <textarea className="textarea focus" name="message" onChange={handleChange} value={datas.message}/>
+                                    <label htmlFor="" className={`label ${datas.message ? "shrink-to-top" : ""}`}>Message</label>
+                                </div>
+                                <div className="form-group direction-row">
+                                    <button type="submit" className="btn">Send.</button>
+                                </div>
+                            </form>
                         </Animate>
                         <Animate name="fadeIn" className="or-separator"><span className="dashed">-</span> OR <span className="dashed">-</span></Animate>
                         <Animate name="fadeIn" className="links-container">
