@@ -1,6 +1,6 @@
 {
   "files": {
-    "main.css": "/98labs/static/css/main.b386d2ab.chunk.css",
+    "main.css": "/98labs/static/css/main.9d937c5e.chunk.css",
     "main.js": "/98labs/static/js/main.465dfd5b.chunk.js",
     "main.js.map": "/98labs/static/js/main.465dfd5b.chunk.js.map",
     "runtime-main.js": "/98labs/static/js/runtime-main.f849030a.js",
@@ -9,10 +9,10 @@
     "static/js/2.263e2f59.chunk.js": "/98labs/static/js/2.263e2f59.chunk.js",
     "static/js/2.263e2f59.chunk.js.map": "/98labs/static/js/2.263e2f59.chunk.js.map",
     "index.html": "/98labs/index.html",
-    "precache-manifest.c204b1a540ccfbe46757f8579bc58e2e.js": "/98labs/precache-manifest.c204b1a540ccfbe46757f8579bc58e2e.js",
+    "precache-manifest.9e9c9d079b85fd2fc3c55f5947dbd5ea.js": "/98labs/precache-manifest.9e9c9d079b85fd2fc3c55f5947dbd5ea.js",
     "service-worker.js": "/98labs/service-worker.js",
     "static/css/2.5bc09813.chunk.css.map": "/98labs/static/css/2.5bc09813.chunk.css.map",
-    "static/css/main.b386d2ab.chunk.css.map": "/98labs/static/css/main.b386d2ab.chunk.css.map",
+    "static/css/main.9d937c5e.chunk.css.map": "/98labs/static/css/main.9d937c5e.chunk.css.map",
     "static/media/App.css": "/98labs/static/media/Roboto-Regular.11eabca2.ttf",
     "static/media/banner.styles.css": "/98labs/static/media/banner.d8cfbd9c.webp"
   },
@@ -20,7 +20,7 @@
     "static/js/runtime-main.f849030a.js",
     "static/css/2.5bc09813.chunk.css",
     "static/js/2.263e2f59.chunk.js",
-    "static/css/main.b386d2ab.chunk.css",
+    "static/css/main.9d937c5e.chunk.css",
     "static/js/main.465dfd5b.chunk.js"
   ]
 }
